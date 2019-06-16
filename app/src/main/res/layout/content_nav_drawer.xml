@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NavDrawer"
+    tools:showIn="@layout/app_bar_nav_drawer"> <!-- diganti 1 weight sum-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kategori"
+                android:textSize="30dp"
+                android:fontFamily="@font/mosk_xtra_bold"
+                android:textColor="	#696969"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"> <!-- diganti 1-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignBounds"
+                android:columnCount="3"
+                android:columnOrderPreserved="false"
+                android:padding="4sp"
+                android:useDefaultMargins="true">
+
+
+                <ImageView
+                    android:id="@+id/huruf"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_huruf"
+                    />
+
+                <!--<TextView-->
+                    <!---->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="@string/huruf"/>-->
+
+                <ImageView
+                    android:id="@+id/angka"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_angka" />
+
+                <ImageView
+                    android:id="@+id/bulan"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_bulan" />
+
+                <ImageView
+                    android:id="@+id/hari"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_hari" />
+
+                <ImageView
+                    android:id="@+id/hewan"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_hewan" />
+
+                <ImageView
+                    android:id="@+id/keluarga"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_keluarga" />
+
+                <ImageView
+                    android:id="@+id/kota"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_kota" />
+
+                <ImageView
+                    android:id="@+id/olahraga"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_olahraga" />
+
+                <ImageView
+                    android:id="@+id/pekerjaan"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_pekerjaan" />
+
+                <ImageView
+                    android:id="@+id/perkenalan"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_perkenalan" />
+
+                <ImageView
+                    android:id="@+id/sifat"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_sifat" />
+
+                <ImageView
+                    android:id="@+id/tahun"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_tahun" />
+
+                <ImageView
+                    android:id="@+id/tempat"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_tempat" />
+
+                <ImageView
+                    android:id="@+id/transportasi"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_transportasi" />
+
+                <ImageView
+                    android:id="@+id/uang"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_uang" />
+
+                <ImageView
+                    android:id="@+id/waktu"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_waktu" />
+
+                <ImageView
+                    android:id="@+id/warna"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/img_warna" />
+
+            </GridLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

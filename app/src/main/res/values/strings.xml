@@ -1,0 +1,27 @@
+<resources>
+    <string name="kategori">Kategori</string>
+    <string name="keluar">Keluar</string>
+    <string name="bisindo_101">BISINDO 101</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="alfabet">Alfabet</string>
+    <string name="huruf">Huruf</string>
+    <string name="angka">Angka</string>
+    <string name="bulan">Bulan</string>
+    <string name="hari">Hari</string>
+    <string name="hewan">Hewan</string>
+    <string name="olahraga">Olahraga</string>
+    <string name="perkenalan">Perkenalan</string>
+    <string name="sifat">Sifat</string>
+    <string name="tahun">Tahun</string>
+    <string name="tempat">Tempat</string>
+    <string name="uang">Uang</string>
+    <string name="waktu">Waktu</string>
+    <string name="warna">Warna</string>
+    <string name="satu">Satu</string>
+
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shintaanurpiena.bisindo101">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bisindo_101_v2"
+        android:label="BISINDO 101"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NavDrawer"
+            android:label="@string/bisindo_101"
+            android:theme="@style/AppTheme"
+        />
+        <activity android:name=".Tentang" />
+        <activity android:name=".Pengaturan" />
+        <activity android:name=".Huruf" />
+        <activity android:name=".Kata" />
+        <activity android:name=".Angka" />
+        <activity android:name=".Bulan" />
+        <activity android:name=".Hari" />
+        <activity android:name=".Hewan" />
+        <activity android:name=".Keluarga" />
+        <activity android:name=".Kota" />
+        <activity android:name=".Olahraga" />
+        <activity android:name=".Pekerjaan" />
+        <activity android:name=".Perkenalan" />
+        <activity android:name=".Sifat" />
+        <activity android:name=".Tahun" />
+        <activity android:name=".Tempat" />
+        <activity android:name=".Transportasi" />
+        <activity android:name=".Uang" />
+        <activity android:name=".Waktu" />
+        <activity android:name=".Warna">
+        </activity>
+    </application>
+
+</manifest>
