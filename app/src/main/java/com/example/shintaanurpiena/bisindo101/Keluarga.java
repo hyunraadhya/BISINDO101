@@ -1,6 +1,7 @@
 package com.example.shintaanurpiena.bisindo101;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -239,5 +240,14 @@ public class Keluarga extends AppCompatActivity {
 
             }
         });
+
+        final ImageView keluargaclose = (ImageView) findViewById(R.id.keluarga_close);
+        keluargaclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
     }
 }

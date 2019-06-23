@@ -1,5 +1,5 @@
 <resources>
-    <string name="kategori">Kategori</string>
+    <string name="kategori">KATEGORI</string>
     <string name="keluar">Keluar</string>
     <string name="bisindo_101">BISINDO 101</string>
     <string name="title_activity_nav_drawer">NavDrawer</string>
@@ -22,6 +22,7 @@
     <string name="waktu">Waktu</string>
     <string name="warna">Warna</string>
     <string name="satu">Satu</string>
+    <string name="belajar_bahasa_isyarat">Belajar Bahasa Isyarat</string>
 
 
 </resources>

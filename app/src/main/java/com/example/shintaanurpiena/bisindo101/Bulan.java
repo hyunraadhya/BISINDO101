@@ -1,6 +1,7 @@
 package com.example.shintaanurpiena.bisindo101;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -300,6 +301,14 @@ public class Bulan extends AppCompatActivity {
                 });
 
                 myDialog.show();
+            }
+        });
+
+        final ImageView bulanclose = (ImageView) findViewById(R.id.bulan_close);
+        bulanclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
     }

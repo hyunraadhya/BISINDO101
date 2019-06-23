@@ -315,28 +315,11 @@ public class Waktu extends AppCompatActivity {
             }
         });
 
-        ImageView wakwak = (ImageView) findViewById(R.id.waktu);
-        wakwak.setOnClickListener(new View.OnClickListener() {
+        final ImageView waktuclose = (ImageView) findViewById(R.id.waktu_close);
+        waktuclose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Waktu.this);
-                myDialog.setContentView(R.layout.waktuuu);
-                ImageView imgwak = (ImageView) myDialog.findViewById(R.id.waktugif);
-                ImageView wak_close = (ImageView) myDialog.findViewById(R.id.waktuclose);
-                Glide.with(Waktu.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.waktu)
-                        //PENGATURAN CACHE
-                        .into(imgwak);
-                wak_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                onBackPressed();
             }
         });
     }

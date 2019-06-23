@@ -314,5 +314,13 @@ public class Olahraga extends AppCompatActivity {
 
             }
         });
+
+        final ImageView olahragaclose = (ImageView) findViewById(R.id.olahraga_close);
+        olahragaclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 }

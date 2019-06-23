@@ -339,5 +339,13 @@ public class Warna extends AppCompatActivity {
 
             }
         });
+
+        final ImageView warnaclose = (ImageView) findViewById(R.id.warna_close);
+        warnaclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 }

@@ -1,6 +1,7 @@
 package com.example.shintaanurpiena.bisindo101;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -340,7 +341,7 @@ public class Huruf extends AppCompatActivity {
                 ImageView n_close = (ImageView) myDialog.findViewById(R.id.nclose);
                 Glide.with(Huruf.this)
                         // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.m)
+                        .load(R.drawable.n)
                         //PENGATURAN CACHE
                         .into(imgn);
                 n_close.setOnClickListener(new View.OnClickListener() {
@@ -639,6 +640,14 @@ public class Huruf extends AppCompatActivity {
                 });
 
                 myDialog.show();
+            }
+        });
+
+        final ImageView hurufclose = (ImageView) findViewById(R.id.huruf_close);
+        hurufclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
     }

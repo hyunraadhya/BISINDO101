@@ -189,8 +189,8 @@ public class NavDrawer extends AppCompatActivity
         waktu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wak=new Intent(NavDrawer.this,Waktu.class);
-                startActivity(wak);
+                Intent wakk=new Intent(NavDrawer.this,Waktu.class);
+                startActivity(wakk);
             }
         });
 
@@ -247,13 +247,6 @@ public class NavDrawer extends AppCompatActivity
             Intent tent1 = new Intent(getApplicationContext(),Tentang.class);
 
             startActivity(tent1);
-
-
-        } else if (id == R.id.nav_pengaturan) {
-
-            Intent peng = new Intent(getApplicationContext(),Pengaturan.class);
-
-            startActivity(peng);
 
         } else if (id == R.id.nav_keluar) {
                     finish();

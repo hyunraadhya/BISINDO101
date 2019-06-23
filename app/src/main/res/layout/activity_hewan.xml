@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:weightSum="10"
-        android:background="#00bedc"
+        android:background="@color/colorPutih"
         android:layout_height="wrap_content">
 
 
@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center"
-            android:background="#fe8f2f"
+            android:background="#0e855d"
             android:padding="20dp"
             android:layout_height="match_parent">
 
@@ -51,24 +51,24 @@
                 android:padding="4sp"
                 android:layout_weight="8"
                 android:alignmentMode="alignBounds"
-                android:columnCount="3"
+                android:columnCount="2"
                 android:columnOrderPreserved="false"
                 android:useDefaultMargins="true"
                 >
 
                 <ImageView
                     android:id="@+id/anjing"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
-                    android:src="@drawable/img_ayam"
+                    android:src="@drawable/img_anjing"
                     android:layout_marginBottom="15dp"
                     />
 
                 <ImageView
                     android:id="@+id/ayam"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -78,7 +78,7 @@
 
                 <ImageView
                     android:id="@+id/babi"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -88,7 +88,7 @@
 
                 <ImageView
                     android:id="@+id/bebek"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -108,7 +108,7 @@
 
                 <ImageView
                     android:id="@+id/burung"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -117,28 +117,8 @@
                     />
 
                 <ImageView
-                    android:id="@+id/cacing"
-                    android:layout_height="100dp"
-                    android:layout_width="0dp"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:src="@drawable/img_cacing"
-                    android:layout_marginBottom="15dp"
-                    />
-
-                <ImageView
-                    android:id="@+id/cumi"
-                    android:layout_height="100dp"
-                    android:layout_width="0dp"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:src="@drawable/img_cumi"
-                    android:layout_marginBottom="15dp"
-                    />
-
-                <ImageView
                     android:id="@+id/gajah"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -147,18 +127,8 @@
                     />
 
                 <ImageView
-                    android:id="@+id/gurita"
-                    android:layout_height="100dp"
-                    android:layout_width="0dp"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:src="@drawable/img_gurita"
-                    android:layout_marginBottom="15dp"
-                    />
-
-                <ImageView
                     android:id="@+id/harimau"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -168,7 +138,7 @@
 
                 <ImageView
                     android:id="@+id/ikan"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -178,7 +148,7 @@
 
                 <ImageView
                     android:id="@+id/jerapah"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -188,7 +158,7 @@
 
                 <ImageView
                     android:id="@+id/kambing"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -197,18 +167,8 @@
                     />
 
                 <ImageView
-                    android:id="@+id/katak"
-                    android:layout_height="100dp"
-                    android:layout_width="0dp"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:src="@drawable/img_katak"
-                    android:layout_marginBottom="15dp"
-                    />
-
-                <ImageView
                     android:id="@+id/kelinci"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -218,7 +178,7 @@
 
                 <ImageView
                     android:id="@+id/kucing"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -228,7 +188,7 @@
 
                 <ImageView
                     android:id="@+id/kuda"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -238,7 +198,7 @@
 
                 <ImageView
                     android:id="@+id/monyet"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -248,7 +208,7 @@
 
                 <ImageView
                     android:id="@+id/nyamuk"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -257,18 +217,8 @@
                     />
 
                 <ImageView
-                    android:id="@+id/rusa"
-                    android:layout_height="100dp"
-                    android:layout_width="0dp"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:src="@drawable/img_rusa"
-                    android:layout_marginBottom="15dp"
-                    />
-
-                <ImageView
                     android:id="@+id/sapi"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -278,7 +228,7 @@
 
                 <ImageView
                     android:id="@+id/singa"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -288,7 +238,7 @@
 
                 <ImageView
                     android:id="@+id/tikus"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
@@ -298,21 +248,11 @@
 
                 <ImageView
                     android:id="@+id/ular"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
                     android:src="@drawable/img_ular"
-                    android:layout_marginBottom="15dp"
-                    />
-
-                <ImageView
-                    android:id="@+id/ulat"
-                    android:layout_height="100dp"
-                    android:layout_width="0dp"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:src="@drawable/img_ulat"
                     android:layout_marginBottom="15dp"
                     />
 

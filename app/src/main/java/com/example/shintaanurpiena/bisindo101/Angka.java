@@ -1,6 +1,7 @@
 package com.example.shintaanurpiena.bisindo101;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -516,6 +517,14 @@ public class Angka extends AppCompatActivity {
                 });
 
                 myDialog.show();
+            }
+        });
+
+        final ImageView angkaclose = (ImageView) findViewById(R.id.angka_close);
+        angkaclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
     }

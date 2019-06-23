@@ -314,5 +314,13 @@ public class Perkenalan extends AppCompatActivity {
 
             }
         });
+
+        final ImageView perkenalanclose = (ImageView) findViewById(R.id.perkenalan_close);
+        perkenalanclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 }

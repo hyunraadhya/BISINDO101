@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/bisindo_101_v2"
+        android:icon="@drawable/bisindo_101_v9"
         android:label="BISINDO 101"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -25,7 +25,6 @@
         <activity android:name=".Tentang" />
         <activity android:name=".Pengaturan" />
         <activity android:name=".Huruf" />
-        <activity android:name=".Kata" />
         <activity android:name=".Angka" />
         <activity android:name=".Bulan" />
         <activity android:name=".Hari" />
