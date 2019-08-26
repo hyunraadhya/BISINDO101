@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Kalimat">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="@color/colorPutih"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="#0e855d"
+            android:padding="20dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/kalimat_close"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/back_white"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:text="@string/kalimat"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4sp"
+                android:layout_weight="8"
+                android:alignmentMode="alignBounds"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:useDefaultMargins="true"
+                >
+
+                <ImageView
+                    android:id="@+id/anbuha"
+                    android:layout_height="200dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/ic_anbuha"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/kotaol"
+                    android:layout_height="200dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/ic_kotaol"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/trawar"
+                    android:layout_height="200dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/ic_trawar"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/kepete"
+                    android:layout_height="200dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/ic_kepete"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/kote"
+                    android:layout_height="200dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:src="@drawable/ic_kote"
+                    android:layout_marginBottom="15dp"
+                    />
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
