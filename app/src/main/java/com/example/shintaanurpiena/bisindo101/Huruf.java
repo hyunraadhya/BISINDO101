@@ -45,23 +45,7 @@ public class Huruf extends AppCompatActivity {
         hurufc.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.cc);
-                ImageView imgc = (ImageView) myDialog.findViewById(R.id.cgif);
-                ImageView c_close = (ImageView) myDialog.findViewById(R.id.cclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.c)
-                        //PENGATURAN CACHE
-                        .into(imgc);
-                c_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.c);
             }
         });
 
