@@ -25,8 +25,8 @@
 
             <ImageView
                 android:id="@+id/tahun_close"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
                 android:src="@drawable/back_white"
                 android:layout_gravity="left" />
 
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="30dp"
+                android:textSize="35dp"
                 android:text="@string/tahun"
                 android:textColor="#FFFFFF" />
 

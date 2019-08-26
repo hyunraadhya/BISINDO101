@@ -13,15 +13,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SplashScreen">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".NavDrawer"
             android:label="@string/bisindo_101"
-            android:theme="@style/AppTheme"
-        />
+            android:theme="@style/AppTheme" />
         <activity android:name=".Tentang" />
         <activity android:name=".Pengaturan" />
         <activity android:name=".Huruf" />
@@ -40,8 +40,8 @@
         <activity android:name=".Transportasi" />
         <activity android:name=".Uang" />
         <activity android:name=".Waktu" />
-        <activity android:name=".Warna">
-        </activity>
+        <activity android:name=".Warna"></activity>
+        <activity android:name=".Kalimat"></activity>
     </application>
 
 </manifest>

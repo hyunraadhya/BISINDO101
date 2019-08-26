@@ -320,7 +320,7 @@ public class Uang extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final Dialog myDialog = new Dialog(Uang.this);
-                myDialog.setContentView(R.layout.empatribuu);
+                myDialog.setContentView(R.layout.empatpribuu);
                 ImageView imgempp = (ImageView) myDialog.findViewById(R.id.empatpribugif);
                 ImageView empp_close = (ImageView) myDialog.findViewById(R.id.empatpribuclose);
                 Glide.with(Uang.this)
@@ -329,6 +329,31 @@ public class Uang extends AppCompatActivity {
                         //PENGATURAN CACHE
                         .into(imgempp);
                 empp_close.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        myDialog.dismiss();
+                    }
+                });
+
+                myDialog.show();
+
+            }
+        });
+
+        ImageView uanlip = (ImageView) findViewById(R.id.limapribu);
+        uanlip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Dialog myDialog = new Dialog(Uang.this);
+                myDialog.setContentView(R.layout.limapribuu);
+                ImageView imglip = (ImageView) myDialog.findViewById(R.id.limapribugif);
+                ImageView lip_close = (ImageView) myDialog.findViewById(R.id.limapribuclose);
+                Glide.with(Uang.this)
+                        // LOAD URL DARI LOKAL DRAWABLE
+                        .load(R.drawable.limapuluh_ribu)
+                        //PENGATURAN CACHE
+                        .into(imglip);
+                lip_close.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         myDialog.dismiss();

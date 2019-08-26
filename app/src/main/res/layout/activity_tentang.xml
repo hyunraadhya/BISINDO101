@@ -23,17 +23,25 @@
             android:padding="20dp"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/tentang_close"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/back_white"
+                android:layout_gravity="left" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="TENTANG"
                 android:textColor="@color/colorPutih"
-                android:textSize="50sp" />
+                android:textSize="35sp" />
 
         </LinearLayout>
 
         <ImageView
+            android:layout_marginTop="20dp"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
@@ -43,8 +51,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Aplikasi ini dibuat oleh Shinta Adhya Nurpiena"
+            android:text="Aplikasi ini merupakan aplikasi yang berisi Bahasa Isyarat Indonesia (BISINDO). Bisindo yang digunakan pada aplikasi ini menggunakan bisindo Surakarta. Aplikasi ini hanya menampilkan bahasa isyarat dasar Bisindo. Untuk mempelajari bahasa isyarat lebih lanjut, dapat menghubungi pengajar kelas bahasa isyarat di kota kalian"
             android:gravity="center"
-            android:textSize="30sp"/>
+            android:textSize="20sp"/>
+
+
     </LinearLayout>
 </RelativeLayout>

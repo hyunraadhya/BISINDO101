@@ -315,31 +315,6 @@ public class Tempat extends AppCompatActivity {
             }
         });
 
-        ImageView temtem = (ImageView) findViewById(R.id.tempat);
-        temtem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Tempat.this);
-                myDialog.setContentView(R.layout.tempatt);
-                ImageView imgtem = (ImageView) myDialog.findViewById(R.id.tempatgif);
-                ImageView tem_close = (ImageView) myDialog.findViewById(R.id.tempatclose);
-                Glide.with(Tempat.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.tempat)
-                        //PENGATURAN CACHE
-                        .into(imgtem);
-                tem_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
-            }
-        });
-
         ImageView temtok = (ImageView) findViewById(R.id.toko);
         temtok.setOnClickListener(new View.OnClickListener() {
             @Override

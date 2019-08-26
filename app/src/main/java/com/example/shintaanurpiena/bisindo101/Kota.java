@@ -141,6 +141,31 @@ public class Kota extends AppCompatActivity {
             }
         });
 
+        ImageView kotdep = (ImageView) findViewById(R.id.depok);
+        kotdep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Dialog myDialog = new Dialog(Kota.this);
+                myDialog.setContentView(R.layout.depokk);
+                ImageView imgdep = (ImageView) myDialog.findViewById(R.id.depokgif);
+                ImageView dep_close = (ImageView) myDialog.findViewById(R.id.depokclose);
+                Glide.with(Kota.this)
+                        // LOAD URL DARI LOKAL DRAWABLE
+                        .load(R.drawable.depok)
+                        //PENGATURAN CACHE
+                        .into(imgdep);
+                dep_close.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        myDialog.dismiss();
+                    }
+                });
+
+                myDialog.show();
+
+            }
+        });
+
         ImageView kotjak = (ImageView) findViewById(R.id.jakarta);
         kotjak.setOnClickListener(new View.OnClickListener() {
             @Override

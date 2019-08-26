@@ -27,8 +27,8 @@
 
             <ImageView
                 android:id="@+id/warna_close"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
                 android:layout_gravity="left"
                 android:src="@drawable/back_white" />
 
@@ -38,7 +38,7 @@
                 android:gravity="center"
                 android:text="@string/warna"
                 android:textColor="#FFFFFF"
-                android:textSize="30dp" />
+                android:textSize="35sp" />
 
 
         </LinearLayout>

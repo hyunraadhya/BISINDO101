@@ -25,8 +25,8 @@
 
             <ImageView
                 android:id="@+id/bulan_close"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
                 android:src="@drawable/back_white"
                 android:layout_gravity="left" />
 
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="30dp"
+                android:textSize="35dp"
                 android:text="@string/bulan"
                 android:textColor="#FFFFFF" />
 
@@ -66,14 +66,6 @@
                     android:layout_marginBottom="15dp"
                     />
 
-                <!--<TextView -->
-                <!--android:id="@+id/atext"-->
-                <!--android:text="A"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:drawableTop="@drawable/aa"-->
-                <!--android:-->
-                <!--/>-->
 
                 <ImageView
                     android:id="@+id/februari"
@@ -182,16 +174,6 @@
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill_horizontal"
                     android:src="@drawable/img_desmber"
-                    android:layout_marginBottom="15dp"
-                    />
-
-                <ImageView
-                    android:id="@+id/bulann"
-                    android:layout_height="200dp"
-                    android:layout_width="0dp"
-                    android:layout_columnWeight="1"
-                    android:layout_gravity="fill_horizontal"
-                    android:src="@drawable/img_bulann"
                     android:layout_marginBottom="15dp"
                     />
 

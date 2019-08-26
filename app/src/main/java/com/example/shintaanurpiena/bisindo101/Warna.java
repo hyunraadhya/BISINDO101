@@ -225,7 +225,7 @@ public class Warna extends AppCompatActivity {
                 ImageView ore_close = (ImageView) myDialog.findViewById(R.id.orenclose);
                 Glide.with(Warna.this)
                         // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.orange)
+                        .load(R.drawable.oranye)
                         //PENGATURAN CACHE
                         .into(imgore);
                 ore_close.setOnClickListener(new View.OnClickListener() {
