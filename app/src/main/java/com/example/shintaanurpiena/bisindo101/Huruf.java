@@ -2,6 +2,8 @@ package com.example.shintaanurpiena.bisindo101;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,33 +15,21 @@ import com.bumptech.glide.Glide;
 
 public class Huruf extends AppCompatActivity {
 
+    //tiap Kategori
+    private DialogAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_huruf);
 
+        adapter = new DialogAdapter(this);
+
         ImageView hurufa = (ImageView) findViewById(R.id.a);
         hurufa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.aa);
-                ImageView imga = (ImageView) myDialog.findViewById(R.id.agif);
-                ImageView a_close = (ImageView) myDialog.findViewById(R.id.aclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.a)
-                        //PENGATURAN CACHE
-                        .into(imga);
-                a_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.a);
             }
         });
 
@@ -47,23 +37,7 @@ public class Huruf extends AppCompatActivity {
         hurufb.setOnClickListener (new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            final Dialog myDialog = new Dialog(Huruf.this);
-            myDialog.setContentView(R.layout.bb);
-            ImageView imgb = (ImageView) myDialog.findViewById(R.id.bgif);
-            ImageView b_close = (ImageView) myDialog.findViewById(R.id.bclose);
-            Glide.with(Huruf.this)
-                    // LOAD URL DARI LOKAL DRAWABLE
-                    .load(R.drawable.b)
-                    //PENGATURAN CACHE
-                    .into(imgb);
-            b_close.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    myDialog.dismiss();
-                }
-            });
-
-            myDialog.show();
+            adapter.setDialog(R.drawable.b);
         }
     });
 
@@ -651,6 +625,8 @@ public class Huruf extends AppCompatActivity {
             }
         });
     }
+
+
 
 }
 
