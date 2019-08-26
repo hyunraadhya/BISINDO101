@@ -471,7 +471,7 @@ public class Hewan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.babii);
+                myDialog.setContentView(R.layout.tikuss);
                 ImageView imgtik = (ImageView) myDialog.findViewById(R.id.tikusgif);
                 ImageView tik_close = (ImageView) myDialog.findViewById(R.id.tikusclose);
                 Glide.with(Hewan.this)
@@ -513,6 +513,14 @@ public class Hewan extends AppCompatActivity {
 
                 myDialog.show();
 
+            }
+        });
+
+        final ImageView hewanclose = (ImageView) findViewById(R.id.hewan_close);
+        hewanclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
 

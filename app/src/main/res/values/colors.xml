@@ -8,5 +8,7 @@
     <color name="colorBiruuu">#0A84D7</color>
     <color name="colorHijau">#17AF7C</color>
     <color name="colorPutih">#FFFFFF</color>
+    <color name="colorTransparat">#00000000</color>
+    <color name="colorButtonPressed">#66000000</color>
 
 </resources>

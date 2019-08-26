@@ -115,7 +115,7 @@ public class Sifat extends AppCompatActivity {
             }
         });
 
-        ImageView sifdia = (ImageView) findViewById(R.id.dia);
+        ImageView sifdia = (ImageView) findViewById(R.id.diam);
         sifdia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -165,30 +165,6 @@ public class Sifat extends AppCompatActivity {
             }
         });
 
-        ImageView sifgal = (ImageView) findViewById(R.id.galak);
-        sifgal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Sifat.this);
-                myDialog.setContentView(R.layout.galakk);
-                ImageView imggal = (ImageView) myDialog.findViewById(R.id.galakgif);
-                ImageView gal_close = (ImageView) myDialog.findViewById(R.id.galakclose);
-                Glide.with(Sifat.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.galak)
-                        //PENGATURAN CACHE
-                        .into(imggal);
-                gal_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
-            }
-        });
 
         ImageView sifjah = (ImageView) findViewById(R.id.jahat);
         sifjah.setOnClickListener(new View.OnClickListener() {

@@ -79,6 +79,7 @@ public class NavDrawer extends AppCompatActivity
         ImageView uang = (ImageView)findViewById(R.id.uang);
         ImageView waktu = (ImageView)findViewById(R.id.waktu);
         ImageView warna = (ImageView)findViewById(R.id.warna);
+        ImageView kalimat = (ImageView)findViewById(R.id.kalimat);
 
 
 
@@ -202,6 +203,14 @@ public class NavDrawer extends AppCompatActivity
             }
         });
 
+        kalimat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent kal=new Intent(NavDrawer.this,Kalimat.class);
+                startActivity(kal);
+            }
+        });
+
     }
 
     @Override
@@ -229,9 +238,10 @@ public class NavDrawer extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+
 
         return super.onOptionsItemSelected(item);
     }

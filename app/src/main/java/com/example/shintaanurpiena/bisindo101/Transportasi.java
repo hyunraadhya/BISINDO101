@@ -15,31 +15,6 @@ public class Transportasi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transportasi);
 
-        ImageView traand = (ImageView) findViewById(R.id.andong);
-        traand.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Transportasi.this);
-                myDialog.setContentView(R.layout.andongg);
-                ImageView imgand = (ImageView) myDialog.findViewById(R.id.andonggif);
-                ImageView and_close = (ImageView) myDialog.findViewById(R.id.andongclose);
-                Glide.with(Transportasi.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.andong)
-                        //PENGATURAN CACHE
-                        .into(imgand);
-                and_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
-            }
-        });
-
         ImageView trabaj = (ImageView) findViewById(R.id.bajaj);
         trabaj.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -397,7 +372,7 @@ public class Transportasi extends AppCompatActivity {
                 final Dialog myDialog = new Dialog(Transportasi.this);
                 myDialog.setContentView(R.layout.tankk);
                 ImageView imgtank = (ImageView) myDialog.findViewById(R.id.tankgif);
-                ImageView tank_close = (ImageView) myDialog.findViewById(R.id.sepedaclose);
+                ImageView tank_close = (ImageView) myDialog.findViewById(R.id.tankclose);
                 Glide.with(Transportasi.this)
                         // LOAD URL DARI LOKAL DRAWABLE
                         .load(R.drawable.tank)

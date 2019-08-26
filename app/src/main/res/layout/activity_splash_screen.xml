@@ -21,16 +21,27 @@
         android:layout_height="wrap_content"
         android:text="@string/bisindo_101"
         android:textAlignment="center"
-        android:textColor="#FFFF"
+        android:textColor="@color/colorPutih"
         android:layout_marginTop="20sp"
         android:textStyle="bold"
         android:textSize="35sp"
         />
 
-    <!--<ProgressBar-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="5sp"-->
-        <!--/>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pendidikan Teknik Informatika dan Komputer"
+        android:textAlignment="center"
+        android:textColor="@color/colorPutih"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UNIVERSITAS SEBELAS MARET"
+        android:textAlignment="center"
+        android:textColor="@color/colorPutih"
+        android:textSize="15sp"/>
+
 
 </LinearLayout>
