@@ -53,23 +53,7 @@ public class Huruf extends AppCompatActivity {
         hurufd.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.dd);
-                ImageView imgd = (ImageView) myDialog.findViewById(R.id.dgif);
-                ImageView d_close = (ImageView) myDialog.findViewById(R.id.dclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.d)
-                        //PENGATURAN CACHE
-                        .into(imgd);
-                d_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.d);
             }
         });
 
@@ -77,23 +61,7 @@ public class Huruf extends AppCompatActivity {
         hurufe.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.ee);
-                ImageView imge = (ImageView) myDialog.findViewById(R.id.egif);
-                ImageView e_close = (ImageView) myDialog.findViewById(R.id.eclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.e)
-                        //PENGATURAN CACHE
-                        .into(imge);
-                e_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.e);
             }
         });
 
@@ -101,23 +69,7 @@ public class Huruf extends AppCompatActivity {
         huruff.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.ff);
-                ImageView imgf = (ImageView) myDialog.findViewById(R.id.fgif);
-                ImageView f_close = (ImageView) myDialog.findViewById(R.id.fclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.f)
-                        //PENGATURAN CACHE
-                        .into(imgf);
-                f_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.f);
             }
         });
 
@@ -125,23 +77,7 @@ public class Huruf extends AppCompatActivity {
         hurufg.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.gg);
-                ImageView imgg = (ImageView) myDialog.findViewById(R.id.ggif);
-                ImageView g_close = (ImageView) myDialog.findViewById(R.id.gclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.g)
-                        //PENGATURAN CACHE
-                        .into(imgg);
-                g_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.g);
             }
         });
 
@@ -149,23 +85,7 @@ public class Huruf extends AppCompatActivity {
         hurufh.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.hh);
-                ImageView imgh = (ImageView) myDialog.findViewById(R.id.hgif);
-                ImageView h_close = (ImageView) myDialog.findViewById(R.id.hclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.h)
-                        //PENGATURAN CACHE
-                        .into(imgh);
-                h_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.h);
             }
         });
 
@@ -173,23 +93,7 @@ public class Huruf extends AppCompatActivity {
         hurufi.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.ii);
-                ImageView imgi = (ImageView) myDialog.findViewById(R.id.igif);
-                ImageView i_close = (ImageView) myDialog.findViewById(R.id.iclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.i)
-                        //PENGATURAN CACHE
-                        .into(imgi);
-                i_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.i);
             }
         });
 
@@ -197,23 +101,7 @@ public class Huruf extends AppCompatActivity {
         hurufj.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.jj);
-                ImageView imgj = (ImageView) myDialog.findViewById(R.id.jgif);
-                ImageView j_close = (ImageView) myDialog.findViewById(R.id.jclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.j)
-                        //PENGATURAN CACHE
-                        .into(imgj);
-                j_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.j);
             }
         });
 
@@ -221,23 +109,7 @@ public class Huruf extends AppCompatActivity {
         hurufk.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.kk);
-                ImageView imgk = (ImageView) myDialog.findViewById(R.id.kgif);
-                ImageView k_close = (ImageView) myDialog.findViewById(R.id.kclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.k)
-                        //PENGATURAN CACHE
-                        .into(imgk);
-                k_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.k);
             }
         });
 
@@ -245,23 +117,7 @@ public class Huruf extends AppCompatActivity {
         hurufl.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.ll);
-                ImageView imgl = (ImageView) myDialog.findViewById(R.id.lgif);
-                ImageView l_close = (ImageView) myDialog.findViewById(R.id.lclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.l)
-                        //PENGATURAN CACHE
-                        .into(imgl);
-                l_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.l);
             }
         });
 
@@ -269,23 +125,7 @@ public class Huruf extends AppCompatActivity {
         hurufm.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.mm);
-                ImageView imgm = (ImageView) myDialog.findViewById(R.id.mgif);
-                ImageView m_close = (ImageView) myDialog.findViewById(R.id.mclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.m)
-                        //PENGATURAN CACHE
-                        .into(imgm);
-                m_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.m);
             }
         });
 
@@ -293,23 +133,7 @@ public class Huruf extends AppCompatActivity {
         hurufn.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.nn);
-                ImageView imgn = (ImageView) myDialog.findViewById(R.id.ngif);
-                ImageView n_close = (ImageView) myDialog.findViewById(R.id.nclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.n)
-                        //PENGATURAN CACHE
-                        .into(imgn);
-                n_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.n);
             }
         });
 
@@ -317,23 +141,7 @@ public class Huruf extends AppCompatActivity {
         hurufo.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.oo);
-                ImageView imgo = (ImageView) myDialog.findViewById(R.id.ogif);
-                ImageView o_close = (ImageView) myDialog.findViewById(R.id.oclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.o)
-                        //PENGATURAN CACHE
-                        .into(imgo);
-                o_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.o);
             }
         });
 
@@ -341,23 +149,7 @@ public class Huruf extends AppCompatActivity {
         hurufp.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.pp);
-                ImageView imgp = (ImageView) myDialog.findViewById(R.id.pgif);
-                ImageView p_close = (ImageView) myDialog.findViewById(R.id.pclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.p)
-                        //PENGATURAN CACHE
-                        .into(imgp);
-                p_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.p);
             }
         });
 
@@ -365,23 +157,7 @@ public class Huruf extends AppCompatActivity {
         hurufq.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.qq);
-                ImageView imgq = (ImageView) myDialog.findViewById(R.id.qgif);
-                ImageView q_close = (ImageView) myDialog.findViewById(R.id.qclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.q)
-                        //PENGATURAN CACHE
-                        .into(imgq);
-                q_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.q);
             }
         });
 
@@ -389,23 +165,7 @@ public class Huruf extends AppCompatActivity {
         hurufr.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.rr);
-                ImageView imgr = (ImageView) myDialog.findViewById(R.id.rgif);
-                ImageView r_close = (ImageView) myDialog.findViewById(R.id.rclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.r)
-                        //PENGATURAN CACHE
-                        .into(imgr);
-                r_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.r);
             }
         });
 
@@ -413,23 +173,7 @@ public class Huruf extends AppCompatActivity {
         hurufs.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.ss);
-                ImageView imgs = (ImageView) myDialog.findViewById(R.id.sgif);
-                ImageView s_close = (ImageView) myDialog.findViewById(R.id.sclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.s)
-                        //PENGATURAN CACHE
-                        .into(imgs);
-                s_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.s);
             }
         });
 
@@ -437,23 +181,7 @@ public class Huruf extends AppCompatActivity {
         huruft.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.tt);
-                ImageView imgt = (ImageView) myDialog.findViewById(R.id.tgif);
-                ImageView t_close = (ImageView) myDialog.findViewById(R.id.tclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.t)
-                        //PENGATURAN CACHE
-                        .into(imgt);
-                t_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.t);
             }
         });
 
@@ -461,23 +189,7 @@ public class Huruf extends AppCompatActivity {
         hurufu.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.uu);
-                ImageView imgu = (ImageView) myDialog.findViewById(R.id.ugif);
-                ImageView u_close = (ImageView) myDialog.findViewById(R.id.uclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.u)
-                        //PENGATURAN CACHE
-                        .into(imgu);
-                u_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.u);
             }
         });
 
@@ -485,23 +197,7 @@ public class Huruf extends AppCompatActivity {
         hurufv.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.vv);
-                ImageView imgv = (ImageView) myDialog.findViewById(R.id.vgif);
-                ImageView v_close = (ImageView) myDialog.findViewById(R.id.vclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.v)
-                        //PENGATURAN CACHE
-                        .into(imgv);
-                v_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.v);
             }
         });
 
@@ -509,23 +205,7 @@ public class Huruf extends AppCompatActivity {
         hurufw.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.ww);
-                ImageView imgw = (ImageView) myDialog.findViewById(R.id.wgif);
-                ImageView w_close = (ImageView) myDialog.findViewById(R.id.wclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.w)
-                        //PENGATURAN CACHE
-                        .into(imgw);
-                w_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.w);
             }
         });
 
@@ -533,23 +213,7 @@ public class Huruf extends AppCompatActivity {
         hurufx.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.xx);
-                ImageView imgx = (ImageView) myDialog.findViewById(R.id.xgif);
-                ImageView x_close = (ImageView) myDialog.findViewById(R.id.xclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.x)
-                        //PENGATURAN CACHE
-                        .into(imgx);
-                x_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.x);
             }
         });
 
@@ -557,23 +221,7 @@ public class Huruf extends AppCompatActivity {
         hurufy.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.yy);
-                ImageView imgy = (ImageView) myDialog.findViewById(R.id.ygif);
-                ImageView y_close = (ImageView) myDialog.findViewById(R.id.yclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.y)
-                        //PENGATURAN CACHE
-                        .into(imgy);
-                y_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.y);
             }
         });
 
@@ -581,23 +229,7 @@ public class Huruf extends AppCompatActivity {
         hurufz.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Huruf.this);
-                myDialog.setContentView(R.layout.zz);
-                ImageView imgz = (ImageView) myDialog.findViewById(R.id.zgif);
-                ImageView z_close = (ImageView) myDialog.findViewById(R.id.zclose);
-                Glide.with(Huruf.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.z)
-                        //PENGATURAN CACHE
-                        .into(imgz);
-                z_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.z);
             }
         });
 

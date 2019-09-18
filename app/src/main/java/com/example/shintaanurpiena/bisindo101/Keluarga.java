@@ -11,33 +11,19 @@ import com.bumptech.glide.Glide;
 
 public class Keluarga extends AppCompatActivity {
 
+    private DialogAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_keluarga);
 
+        adapter = new DialogAdapter(this);
+
         ImageView kelbap = (ImageView) findViewById(R.id.bapak);
         kelbap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Keluarga.this);
-                myDialog.setContentView(R.layout.bapakk);
-                ImageView imgbap = (ImageView) myDialog.findViewById(R.id.bapakgif);
-                ImageView bap_close = (ImageView) myDialog.findViewById(R.id.bapakclose);
-                Glide.with(Keluarga.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.bapak)
-                        //PENGATURAN CACHE
-                        .into(imgbap);
-                bap_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.bapak);
             }
         });
 
@@ -45,24 +31,7 @@ public class Keluarga extends AppCompatActivity {
         kelibu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Keluarga.this);
-                myDialog.setContentView(R.layout.ibuu);
-                ImageView imgibu = (ImageView) myDialog.findViewById(R.id.ibugif);
-                ImageView ibu_close = (ImageView) myDialog.findViewById(R.id.ibuclose);
-                Glide.with(Keluarga.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.ibu)
-                        //PENGATURAN CACHE
-                        .into(imgibu);
-                ibu_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.ibu);
             }
         });
 
@@ -70,24 +39,7 @@ public class Keluarga extends AppCompatActivity {
         kelkek.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Keluarga.this);
-                myDialog.setContentView(R.layout.kakekk);
-                ImageView imgkek = (ImageView) myDialog.findViewById(R.id.kakekgif);
-                ImageView kek_close = (ImageView) myDialog.findViewById(R.id.kakekclose);
-                Glide.with(Keluarga.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.kakek)
-                        //PENGATURAN CACHE
-                        .into(imgkek);
-                kek_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.kakek);
             }
         });
 
@@ -95,24 +47,7 @@ public class Keluarga extends AppCompatActivity {
         kelnek.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Keluarga.this);
-                myDialog.setContentView(R.layout.nenekk);
-                ImageView imgnek = (ImageView) myDialog.findViewById(R.id.nenekgif);
-                ImageView nek_close = (ImageView) myDialog.findViewById(R.id.nenekclose);
-                Glide.with(Keluarga.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.nenek)
-                        //PENGATURAN CACHE
-                        .into(imgnek);
-                nek_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.nenek);
             }
         });
 
@@ -120,24 +55,7 @@ public class Keluarga extends AppCompatActivity {
         kellak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Keluarga.this);
-                myDialog.setContentView(R.layout.lakii);
-                ImageView imglak = (ImageView) myDialog.findViewById(R.id.lakigif);
-                ImageView lak_close = (ImageView) myDialog.findViewById(R.id.lakiclose);
-                Glide.with(Keluarga.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.lakilaki)
-                        //PENGATURAN CACHE
-                        .into(imglak);
-                lak_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.lakilaki);
             }
         });
 
@@ -145,24 +63,7 @@ public class Keluarga extends AppCompatActivity {
         kelper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Keluarga.this);
-                myDialog.setContentView(R.layout.perempuann);
-                ImageView imgper = (ImageView) myDialog.findViewById(R.id.perempuangif);
-                ImageView per_close = (ImageView) myDialog.findViewById(R.id.perempuanclose);
-                Glide.with(Keluarga.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.perempuan)
-                        //PENGATURAN CACHE
-                        .into(imgper);
-                per_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.perempuan);
             }
         });
 
@@ -170,24 +71,7 @@ public class Keluarga extends AppCompatActivity {
         kelank.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Keluarga.this);
-                myDialog.setContentView(R.layout.anakk);
-                ImageView imgank = (ImageView) myDialog.findViewById(R.id.anakgif);
-                ImageView ank_close = (ImageView) myDialog.findViewById(R.id.anakclose);
-                Glide.with(Keluarga.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.anak)
-                        //PENGATURAN CACHE
-                        .into(imgank);
-                ank_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.anak);
             }
         });
 
@@ -195,24 +79,7 @@ public class Keluarga extends AppCompatActivity {
         kelankk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Keluarga.this);
-                myDialog.setContentView(R.layout.anakkk);
-                ImageView imgankkk = (ImageView) myDialog.findViewById(R.id.anakkkgif);
-                ImageView ankkk_close = (ImageView) myDialog.findViewById(R.id.anakkkclose);
-                Glide.with(Keluarga.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.anakanak)
-                        //PENGATURAN CACHE
-                        .into(imgankkk);
-                ankkk_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.anakanak);
             }
         });
 
@@ -220,24 +87,7 @@ public class Keluarga extends AppCompatActivity {
         kelbay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Keluarga.this);
-                myDialog.setContentView(R.layout.bayii);
-                ImageView imgbay = (ImageView) myDialog.findViewById(R.id.bayigif);
-                ImageView bay_close = (ImageView) myDialog.findViewById(R.id.bayiclose);
-                Glide.with(Keluarga.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.bayi)
-                        //PENGATURAN CACHE
-                        .into(imgbay);
-                bay_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.bayi);
             }
         });
 

@@ -10,32 +10,20 @@ import com.bumptech.glide.Glide;
 
 public class Kalimat extends AppCompatActivity {
 
+    private DialogAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kalimat);
 
+        adapter = new DialogAdapter(this);
+
         ImageView kalan = (ImageView) findViewById(R.id.anbuha);
         kalan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Kalimat.this);
-                myDialog.setContentView(R.layout.anbuhaa);
-                ImageView imgan = (ImageView) myDialog.findViewById(R.id.anbuhagif);
-                ImageView an_close = (ImageView) myDialog.findViewById(R.id.anbuhaclose);
-                Glide.with(Kalimat.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.ultah)
-                        //PENGATURAN CACHE
-                        .into(imgan);
-                an_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
+                adapter.setDialog(R.drawable.ultah);
 
             }
         });
@@ -44,24 +32,7 @@ public class Kalimat extends AppCompatActivity {
         kalkot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Kalimat.this);
-                myDialog.setContentView(R.layout.kotaoll);
-                ImageView imgkot = (ImageView) myDialog.findViewById(R.id.kotaolgif);
-                ImageView kot_close = (ImageView) myDialog.findViewById(R.id.kotaolclose);
-                Glide.with(Kalimat.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.pertandingan)
-                        //PENGATURAN CACHE
-                        .into(imgkot);
-                kot_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.pertandingan);
             }
         });
 
@@ -69,24 +40,7 @@ public class Kalimat extends AppCompatActivity {
         kaltra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Kalimat.this);
-                myDialog.setContentView(R.layout.trawarr);
-                ImageView imgtra = (ImageView) myDialog.findViewById(R.id.trawargif);
-                ImageView tra_close = (ImageView) myDialog.findViewById(R.id.trawarclose);
-                Glide.with(Kalimat.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.tabrakan)
-                        //PENGATURAN CACHE
-                        .into(imgtra);
-                tra_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.tabrakan);
             }
         });
 
@@ -94,24 +48,7 @@ public class Kalimat extends AppCompatActivity {
         kalkep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Kalimat.this);
-                myDialog.setContentView(R.layout.kepetee);
-                ImageView imgkep = (ImageView) myDialog.findViewById(R.id.kepetegif);
-                ImageView kep_close = (ImageView) myDialog.findViewById(R.id.kepeteclose);
-                Glide.with(Kalimat.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.kerten)
-                        //PENGATURAN CACHE
-                        .into(imgkep);
-                kep_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.kerten);
             }
         });
 
@@ -119,24 +56,7 @@ public class Kalimat extends AppCompatActivity {
         kalkote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Kalimat.this);
-                myDialog.setContentView(R.layout.kotee);
-                ImageView imgkote = (ImageView) myDialog.findViewById(R.id.kotegif);
-                ImageView kote_close = (ImageView) myDialog.findViewById(R.id.koteclose);
-                Glide.with(Kalimat.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.paragon)
-                        //PENGATURAN CACHE
-                        .into(imgkote);
-                kote_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.paragon);
             }
         });
 

@@ -10,58 +10,28 @@ import com.bumptech.glide.Glide;
 
 public class Hewan extends AppCompatActivity {
 
+    private DialogAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hewan);
 
+        adapter = new DialogAdapter(this);
+
         ImageView hewanj = (ImageView) findViewById(R.id.anjing);
         hewanj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.anjingg);
-                ImageView imganj = (ImageView) myDialog.findViewById(R.id.anjinggif);
-                ImageView anj_close = (ImageView) myDialog.findViewById(R.id.anjingclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.anjing)
-                        //PENGATURAN CACHE
-                        .into(imganj);
-                anj_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.anjing);
             }
+
         });
 
         ImageView hewaya = (ImageView) findViewById(R.id.ayam);
         hewaya.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.ayamm);
-                ImageView imgaya = (ImageView) myDialog.findViewById(R.id.ayamgif);
-                ImageView aya_close = (ImageView) myDialog.findViewById(R.id.ayamclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.ayam)
-                        //PENGATURAN CACHE
-                        .into(imgaya);
-                aya_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.ayam);
             }
         });
 
@@ -69,24 +39,7 @@ public class Hewan extends AppCompatActivity {
         hewbab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.babii);
-                ImageView imgbab = (ImageView) myDialog.findViewById(R.id.babigif);
-                ImageView bab_close = (ImageView) myDialog.findViewById(R.id.babiclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.babi)
-                        //PENGATURAN CACHE
-                        .into(imgbab);
-                bab_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.babi);
             }
         });
 
@@ -94,24 +47,7 @@ public class Hewan extends AppCompatActivity {
         hewbeb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.bebekk);
-                ImageView imgbeb = (ImageView) myDialog.findViewById(R.id.bebekgif);
-                ImageView beb_close = (ImageView) myDialog.findViewById(R.id.bebekclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.bebek)
-                        //PENGATURAN CACHE
-                        .into(imgbeb);
-                beb_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.bebek);
             }
         });
 
@@ -119,24 +55,7 @@ public class Hewan extends AppCompatActivity {
         hewbuy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.buayaa);
-                ImageView imgbuy = (ImageView) myDialog.findViewById(R.id.buayagif);
-                ImageView buy_close = (ImageView) myDialog.findViewById(R.id.buayaclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.buaya)
-                        //PENGATURAN CACHE
-                        .into(imgbuy);
-                buy_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.buaya);
             }
         });
 
@@ -144,24 +63,7 @@ public class Hewan extends AppCompatActivity {
         hewbur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.burungg);
-                ImageView imgbur = (ImageView) myDialog.findViewById(R.id.burunggif);
-                ImageView bur_close = (ImageView) myDialog.findViewById(R.id.burungclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.burung)
-                        //PENGATURAN CACHE
-                        .into(imgbur);
-                bur_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.burung);
             }
         });
 
@@ -169,24 +71,7 @@ public class Hewan extends AppCompatActivity {
         hewgaj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.gajahh);
-                ImageView imggaj = (ImageView) myDialog.findViewById(R.id.gajahgif);
-                ImageView gaj_close = (ImageView) myDialog.findViewById(R.id.gajahclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.gajah)
-                        //PENGATURAN CACHE
-                        .into(imggaj);
-                gaj_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.gajah);
             }
         });
 
@@ -194,24 +79,7 @@ public class Hewan extends AppCompatActivity {
         hewhar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.harimauu);
-                ImageView imghar = (ImageView) myDialog.findViewById(R.id.harimaugif);
-                ImageView har_close = (ImageView) myDialog.findViewById(R.id.harimauclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.harimau)
-                        //PENGATURAN CACHE
-                        .into(imghar);
-                har_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.harimau);
             }
         });
 
@@ -219,24 +87,7 @@ public class Hewan extends AppCompatActivity {
         hewika.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.ikann);
-                ImageView imgika = (ImageView) myDialog.findViewById(R.id.ikangif);
-                ImageView ika_close = (ImageView) myDialog.findViewById(R.id.ikanclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.ikan)
-                        //PENGATURAN CACHE
-                        .into(imgika);
-                ika_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.ikan);
             }
         });
 
@@ -244,24 +95,7 @@ public class Hewan extends AppCompatActivity {
         hewjer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.jerapahh);
-                ImageView imgjer = (ImageView) myDialog.findViewById(R.id.jerapahgif);
-                ImageView jer_close = (ImageView) myDialog.findViewById(R.id.jerapahclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.jerapah)
-                        //PENGATURAN CACHE
-                        .into(imgjer);
-                jer_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.jerapah);
             }
         });
 
@@ -269,24 +103,7 @@ public class Hewan extends AppCompatActivity {
         hewkam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.kambingg);
-                ImageView imgkam = (ImageView) myDialog.findViewById(R.id.kambinggif);
-                ImageView kam_close = (ImageView) myDialog.findViewById(R.id.kambingclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.kambing)
-                        //PENGATURAN CACHE
-                        .into(imgkam);
-                kam_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.kambing);
             }
         });
 
@@ -294,24 +111,7 @@ public class Hewan extends AppCompatActivity {
         hewkel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.kelincii);
-                ImageView imgkel = (ImageView) myDialog.findViewById(R.id.kelincigif);
-                ImageView kel_close = (ImageView) myDialog.findViewById(R.id.kelinciclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.kelinci)
-                        //PENGATURAN CACHE
-                        .into(imgkel);
-                kel_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.kelinci);
             }
         });
 
@@ -319,24 +119,7 @@ public class Hewan extends AppCompatActivity {
         hewkuc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.kucingg);
-                ImageView imgkuc = (ImageView) myDialog.findViewById(R.id.kucinggif);
-                ImageView kuc_close = (ImageView) myDialog.findViewById(R.id.kucingclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.kucing)
-                        //PENGATURAN CACHE
-                        .into(imgkuc);
-                kuc_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.kucing);
             }
         });
 
@@ -344,24 +127,7 @@ public class Hewan extends AppCompatActivity {
         hewkud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.kudaa);
-                ImageView imgkud = (ImageView) myDialog.findViewById(R.id.kudagif);
-                ImageView kud_close = (ImageView) myDialog.findViewById(R.id.kudaclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.kuda)
-                        //PENGATURAN CACHE
-                        .into(imgkud);
-                kud_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.kuda);
             }
         });
 
@@ -369,24 +135,7 @@ public class Hewan extends AppCompatActivity {
         hewmon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.monyett);
-                ImageView imgmon = (ImageView) myDialog.findViewById(R.id.monyetgif);
-                ImageView mon_close = (ImageView) myDialog.findViewById(R.id.monyetclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.monyet)
-                        //PENGATURAN CACHE
-                        .into(imgmon);
-                mon_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.monyet);
             }
         });
 
@@ -394,24 +143,7 @@ public class Hewan extends AppCompatActivity {
         hewnya.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.nyamukk);
-                ImageView imgnya = (ImageView) myDialog.findViewById(R.id.nyamukgif);
-                ImageView nya_close = (ImageView) myDialog.findViewById(R.id.nyamukclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.nyamuk)
-                        //PENGATURAN CACHE
-                        .into(imgnya);
-                nya_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.nyamuk);
             }
         });
 
@@ -420,24 +152,7 @@ public class Hewan extends AppCompatActivity {
         hewsap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.sapii);
-                ImageView imgsap = (ImageView) myDialog.findViewById(R.id.sapigif);
-                ImageView sap_close = (ImageView) myDialog.findViewById(R.id.sapiclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.sapi)
-                        //PENGATURAN CACHE
-                        .into(imgsap);
-                sap_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.sapi);
             }
         });
 
@@ -445,24 +160,7 @@ public class Hewan extends AppCompatActivity {
         hewsin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.singaa);
-                ImageView imgsin = (ImageView) myDialog.findViewById(R.id.singagif);
-                ImageView sin_close = (ImageView) myDialog.findViewById(R.id.singaclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.singa)
-                        //PENGATURAN CACHE
-                        .into(imgsin);
-                sin_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.singa);
             }
         });
 
@@ -470,24 +168,7 @@ public class Hewan extends AppCompatActivity {
         hewtik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.tikuss);
-                ImageView imgtik = (ImageView) myDialog.findViewById(R.id.tikusgif);
-                ImageView tik_close = (ImageView) myDialog.findViewById(R.id.tikusclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.tikus)
-                        //PENGATURAN CACHE
-                        .into(imgtik);
-                tik_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.tikus);
             }
         });
 
@@ -495,24 +176,7 @@ public class Hewan extends AppCompatActivity {
         hewulr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Dialog myDialog = new Dialog(Hewan.this);
-                myDialog.setContentView(R.layout.ularr);
-                ImageView imgulr = (ImageView) myDialog.findViewById(R.id.ulargif);
-                ImageView ulr_close = (ImageView) myDialog.findViewById(R.id.ularclose);
-                Glide.with(Hewan.this)
-                        // LOAD URL DARI LOKAL DRAWABLE
-                        .load(R.drawable.ular)
-                        //PENGATURAN CACHE
-                        .into(imgulr);
-                ulr_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-
-                myDialog.show();
-
+                adapter.setDialog(R.drawable.ular);
             }
         });
 
